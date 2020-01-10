@@ -1,3 +1,4 @@
+import NavigateBar from '../components/NavigateBar'
 import Header from './Header'
 import Footer from './Footer'
 
@@ -9,9 +10,12 @@ import Footer from './Footer'
 
 const Layout = props => (
     <main>
-        <Header/>
-        {props.children}
-        <Footer/>
+        <NavigateBar/>
+        <div className="main">
+            <Header/>
+            {props.children}
+            <Footer/>
+        </div>
 
         <style jsx global>{`
             * {
@@ -28,6 +32,10 @@ const Layout = props => (
             }
 
             main {
+                margin: 0;
+            }
+
+            .main {
                 max-width: 900px;
                 margin: auto;
             }
