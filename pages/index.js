@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from '../components/Header'
 import Layout from '../components/Layout'
 import WeeklyLists from '../containers/WeeklyLists'
 import LatestLists from '../containers/LatestLists'
@@ -18,6 +19,7 @@ const MockupData = {
 
 const Index = props => (
     <Layout>
+        <Header/>
         <div>
             <div className="container left">
                 <WeeklyLists store={MockupData}/>
@@ -47,6 +49,7 @@ const Index = props => (
             @media only screen and (min-width: 600px) {
                 .left {
                     width: 70%;
+                    margin: 0;
                 }
 
                 .right {

@@ -1,16 +1,24 @@
 const Header = props => (
     <div className="header">
-        <h1>Header</h1>
+        <div className="h-container h-left"></div>
+        <div className="h-container h-right"></div>
 
         <style jsx>{`
             .header {
                 display: none;
-                background-color: #f1f1f1;
             }
 
             @media only screen and (min-width: 600px) {
                 .header {
                     display: block;
+                    margin-top: 40px;
+                    height: 400px;
+                }
+
+                .h-container {
+                    height: 100%;
+                    float: left;
+                    width: 50%;
                 }
             }
         `}</style>

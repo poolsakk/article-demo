@@ -12,7 +12,6 @@ const Layout = props => (
     <main>
         <NavigateBar/>
         <div className="main">
-            <Header/>
             {props.children}
             <Footer/>
         </div>

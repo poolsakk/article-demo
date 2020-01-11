@@ -16,12 +16,12 @@ const CardHorizontal = props => (
       h3 {
         margin: 0;
       }
-
+  
       .contents {
         padding: 16px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       }
-
+  
       .image {
         width: 100%;
         height: 225px;
@@ -30,7 +30,6 @@ const CardHorizontal = props => (
         background-size: cover;
         background-position: center;
       }
-    }
     `}</style>
   </article>
 );
