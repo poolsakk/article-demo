@@ -6,7 +6,8 @@ const imgNothing =
 const CardVertical = props => (
     <article>
       <div className="card">
-        <img src={props.image || imgNothing} />
+        <div className="image"/>
+        {/* <img src={props.image || imgNothing} /> */}
         <div className="content">
           <h4 className="depart">POLITIC</h4>
           <h4 className="title">{props.title}</h4>
@@ -28,7 +29,17 @@ const CardVertical = props => (
             height: 13vh;
         }
 
+        .image {
+          width: 35%;
+          height: 13vh;
+          background-image: url(${props.image || imgNothing});
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+        }
+
         .content {
+          width: 65%;
           padding-left: 8px;
         }
 
@@ -43,22 +54,26 @@ const CardVertical = props => (
         }
 
         .title {
-          font-size: 0.44em;
+          font-size: 0.5em;
         }
 
         @media only screen and (min-width: 600px) {
-            img {
-                padding: 20px;
-                width: 40%;
-                height: 18vh;
+            .image {
+              width: 45%;
+              height: 180px;
+            }
+
+            .content {
+              width: 55%;
+              padding-left: 30px;
             }
 
             .depart {
-                font-size: 0.35em;
+                font-size: 12px;
               }
 
             .title {
-                font-size: 19px;
+                font-size: 20px;
             }
         }
       `}</style>

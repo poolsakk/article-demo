@@ -25,7 +25,16 @@ const LatestLists = props => (
             }
 
             li {
-                padding-bottom: 10px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #e0e0e0;
+            }
+
+            @media only screen and (min-width: 600px) {
+                li {
+                    padding-top: 40px;
+                    padding-bottom: 40px;
+                }
             }
         `}</style>
     </div>
