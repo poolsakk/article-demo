@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import WeeklyLists from '../containers/WeeklyLists'
-import ListVertical from '../containers/ListVertical'
+import LatestLists from '../containers/LatestLists'
 
 const MockupData = {
     text:
@@ -21,6 +21,7 @@ const Index = props => (
         <div>
             <div className="container left">
                 <WeeklyLists store={MockupData}/>
+                <LatestLists store={MockupData}/>
             </div>
             <div className="container right">
                 RIGHT

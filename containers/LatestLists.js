@@ -1,7 +1,7 @@
 import React from 'react'
 import CardVertical from '../components/CardVertical'
 
-const ListVertical = props => (
+const LatestLists = props => (
     <div className="container">
         <ul>
             {
@@ -31,4 +31,4 @@ const ListVertical = props => (
     </div>
 )
 
-export default ListVertical
+export default LatestLists
