@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import ListHorizontal from '../containers/ListHorizontal'
+import WeeklyLists from '../containers/WeeklyLists'
 import ListVertical from '../containers/ListVertical'
 
 const MockupData = {
@@ -20,8 +20,7 @@ const Index = props => (
     <Layout>
         <div>
             <div className="container left">
-                <ListHorizontal store={MockupData}/>
-                <ListVertical store={MockupData}/>
+                <WeeklyLists store={MockupData}/>
             </div>
             <div className="container right">
                 RIGHT

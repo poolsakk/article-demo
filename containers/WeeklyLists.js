@@ -1,7 +1,7 @@
 import React from 'react'
 import CardHorizontal from '../components/CardHorizontal'
 
-const ListHorizontal = props => (
+const WeeklyLists = props => (
     <div className="container">
         <ul>
             {
@@ -35,4 +35,4 @@ const ListHorizontal = props => (
     </div>
 )
 
-export default ListHorizontal
+export default WeeklyLists
