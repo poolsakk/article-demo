@@ -6,7 +6,7 @@ const imgNothing =
 const CardHorizontal = props => (
   <article>
     <div className="card">
-      <img src={props.image || imgNothing} />
+      <div className="image"/>
       <div className="contents">
         <h3>{props.title}</h3>
       </div>
@@ -22,10 +22,13 @@ const CardHorizontal = props => (
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       }
 
-      img {
+      .image {
         width: 100%;
         height: 225px;
-        padding: 10px;
+        background-image: url(${props.image || imgNothing});
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
       }
     }
     `}</style>
