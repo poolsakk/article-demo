@@ -59,12 +59,12 @@ const CardVertical = props => (
 
         @media only screen and (min-width: 600px) {
             .image {
-              width: 45%;
+              width: 35%;
               height: 180px;
             }
 
             .content {
-              width: 55%;
+              width: 65%;
               padding-left: 30px;
             }
 
