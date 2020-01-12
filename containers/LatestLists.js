@@ -31,10 +31,13 @@ const LatestLists = props => (
             }
 
             @media only screen and (min-width: 600px) {
+                ul {
+                    padding-top: 20px;
+                }
+
                 li {
-                    padding-top: 0;
+                    padding-top: 30px;
                     padding-bottom: 30px;
-                    margin-bottom: 30px;
                 }
             }
         `}</style>
