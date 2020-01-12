@@ -38,10 +38,14 @@ const Header = props => (
 
                 .h-container {
                     float: left;
-                    width: 50%;
                 }
 
-                .h-right {
+                .h-container.h-left {
+                    width: 55%;
+                }
+
+                .h-container.h-right {
+                    width: 45%;
                     overflow: hidden;
                 }
 
@@ -52,7 +56,7 @@ const Header = props => (
                 }
 
                 .h-right ul li {
-                    padding: 0 0 30px 40px;
+                    padding: 0 0 30px 30px;
                 }
             }
         `}</style>

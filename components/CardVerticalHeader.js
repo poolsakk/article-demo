@@ -52,12 +52,12 @@ const CardVerticalHeader = props => (
 
         @media only screen and (min-width: 600px) {
             .image {
-              width: 30%;
+              width: 35%;
               height: 120px;
             }
 
             .content {
-              width: 70%;
+              width: 65%;
               padding-left: 20px;
             }
 
