@@ -5,9 +5,11 @@ const WeeklyLists = props => (
     <div className="container">
         <ul>
             {
-                props.store.image.map(item => (
-                    <li>
-                        <CardHorizontal image={item} title={props.store.text} />
+                props.store.map(entry => (
+                    <li key={entry.id}>
+                        <CardHorizontal 
+                            title={entry.name} 
+                            image={entry.image.original} />
                     </li>
                 ))
             }
@@ -15,6 +17,7 @@ const WeeklyLists = props => (
         <style jsx>{`
             .container {
                 padding: 10px;
+                width: 100%;
             }
 
             ul {

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link"
 
 const imgNothing =
     "https://images.unsplash.com/photo-1532003885409-ed84d334f6cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80";
@@ -6,14 +7,31 @@ const imgNothing =
 const CardHorizontal = props => (
   <article>
     <div className="card custom-header">
-      <div className="image"/>
+      <Link href="/">
+        <a>
+          <div className="image"/>
+        </a>
+      </Link>
       <div className="contents">
-        <h3 className="title">{props.title}</h3>
+      <Link href="/">
+        <a>
+          <h3 className="title">{props.title}</h3>
+        </a>
+      </Link>
       </div>
     </div>
 
     <style jsx>{`
+      a {
+        text-decoration: none;
+      }
+
+      a:hover {
+        cursor: pointer;
+      }
+
       h3 {
+        display: inherit;
         margin: 0;
       }
   

@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import Layout from '../components/Layout'
 import WeeklyLists from '../containers/WeeklyLists'
 import LatestLists from '../containers/LatestLists'
+import fetch from 'isomorphic-unfetch'
 
 const MockupData = {
     text:
@@ -22,7 +23,7 @@ const Index = props => (
         <Header store={MockupData}/>
         <div>
             <div className="container left">
-                <WeeklyLists store={MockupData}/>
+                <WeeklyLists store={props.shows}/>
                 <LatestLists store={MockupData}/>
             </div>
             <div className="container right">
@@ -59,5 +60,18 @@ const Index = props => (
         `}</style>
     </Layout>
 )
+
+Index.getInitialProps = async function() {
+    const res = await fetch('https://api.tvmaze.com/search/shows?q=batman')
+    const data = await res.json()
+
+    console.log(`Show data fetched. Count: ${data.length}`)
+    
+    //console.log(data.map(entry => entry.show))
+    
+    return {
+        shows: data.map(entry => entry.show)
+    }
+}
 
 export default Index
