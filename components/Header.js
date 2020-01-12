@@ -19,6 +19,7 @@ const Header = props => (
                     display: block;
                     margin-top: 40px;
                     height: 400px;
+                    padding-top: 20px;
                 }
 
                 .h-container {
