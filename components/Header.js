@@ -1,8 +1,10 @@
+import CardHorizontal from '../components/CardHorizontal'
+
 const Header = props => (
     <div className="header">
         <div className="h-container h-left">
             <div className="h-card">
-                
+                <CardHorizontal image={props.store.image[1]} title={props.store.text} />
             </div>
         </div>
         <div className="h-container h-right"></div>

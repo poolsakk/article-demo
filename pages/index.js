@@ -19,7 +19,7 @@ const MockupData = {
 
 const Index = props => (
     <Layout>
-        <Header/>
+        <Header store={MockupData}/>
         <div>
             <div className="container left">
                 <WeeklyLists store={MockupData}/>

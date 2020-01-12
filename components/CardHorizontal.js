@@ -5,10 +5,10 @@ const imgNothing =
 
 const CardHorizontal = props => (
   <article>
-    <div className="card">
+    <div className="card custom-header">
       <div className="image"/>
       <div className="contents">
-        <h3>{props.title}</h3>
+        <h3 className="title">{props.title}</h3>
       </div>
     </div>
 
@@ -29,6 +29,20 @@ const CardHorizontal = props => (
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+      }
+
+      @media only screen and (min-width: 600px) {
+        .card.custom-header .image {
+          height: 180px;
+        }
+
+        .card.custom-header .contents {
+          box-shadow: none;
+        }
+
+        .card.custom-header .title {
+          font-size: 24px;
+        }
       }
     `}</style>
   </article>
