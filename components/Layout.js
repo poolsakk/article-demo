@@ -22,7 +22,7 @@ const Layout = props => (
             }
         
             body {
-                font-family: Arial, Helvetica, sans-serif;
+                font-family: Sarabun,Tahoma,sans-serif;
                 margin: auto;
             }
 

@@ -3,11 +3,10 @@ import React from "react";
 const imgNothing =
     "https://images.unsplash.com/photo-1532003885409-ed84d334f6cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80";
 
-const CardVertical = props => (
+const CardVerticalHeader = props => (
     <article>
       <div className="v-card custom-header">
         <div className="image"/>
-        {/* <img src={props.image || imgNothing} /> */}
         <div className="content">
           <h4 className="depart">POLITIC</h4>
           <h4 className="title">{props.title}</h4>
@@ -21,12 +20,6 @@ const CardVertical = props => (
 
         .v-card {
           display: flex;
-        }
-
-        img {
-            padding: 8px 6px 8px 6px;
-            width: 35%;
-            height: 13vh;
         }
 
         .image {
@@ -59,13 +52,13 @@ const CardVertical = props => (
 
         @media only screen and (min-width: 600px) {
             .image {
-              width: 45%;
-              height: 180px;
+              width: 40%;
+              height: 108px;
             }
 
             .content {
-              width: 55%;
-              padding-left: 30px;
+              width: 60%;
+              padding-left: 20px;
             }
 
             .depart {
@@ -73,11 +66,11 @@ const CardVertical = props => (
               }
 
             .title {
-                font-size: 20px;
+                font-size: 16px;
             }
         }
       `}</style>
     </article>
 )
 
-export default CardVertical
+export default CardVerticalHeader
