@@ -28,14 +28,15 @@ const Header = props => (
 
             @media only screen and (min-width: 600px) {
                 .header {
-                    display: block;
+                    display: inline-block;
                     margin-top: 40px;
-                    height: auto;
                     padding-top: 20px;
+                    padding-bottom: 20px;
+                    height: auto;
+                    border-bottom: 1px solid #e0e0e0;
                 }
 
                 .h-container {
-                    height: 100%;
                     float: left;
                     width: 50%;
                 }
@@ -51,7 +52,7 @@ const Header = props => (
                 }
 
                 .h-right ul li {
-                    padding: 0 0 20px 20px;
+                    padding: 0 0 30px 40px;
                 }
             }
         `}</style>

@@ -37,6 +37,7 @@ const CardHorizontal = props => (
         }
 
         .card.custom-header .contents {
+          padding-left: 30px;
           box-shadow: none;
         }
 
